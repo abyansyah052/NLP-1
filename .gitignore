@@ -1,3 +1,5 @@
 .venv/
 # pkl_file/
 pdf_output/
+.DS_Store
+**/.DS_Store
