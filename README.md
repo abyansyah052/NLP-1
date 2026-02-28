@@ -71,6 +71,8 @@ The full project produces 6 sequential notebooks, two preprocessed CSVs, and exp
 
 ## What the Analysis Reveals for Bank Jago
 
+In the Indonesian dataset, about 62.05% of reviews are classified as positive and 37.95% as negative. This means most users report good experiences, but the share of complaints is still large enough that the model must learn the negative class well instead of just defaulting to “positive” predictions.
+
 Negative reviews are not vague. They cluster around three recurring problems: login failures after app updates, transaction failures during QRIS payments, and slow or unhelpful customer service response. These show up consistently in both the Indonesian and English datasets, which means they are not isolated incidents.
 
 The English-language reviews are worth separating out because that user segment tends to report different issues. They are more likely to describe problems with international payments, virtual card behavior, and Pocket isolation logic. These are not complaints that surface prominently in the Indonesian review volume, so they would get buried if both languages were analyzed together.
@@ -81,16 +83,15 @@ A model that classifies incoming reviews at scale means the product team does no
 
 ## Project Structure
 
-Tugas_1/
-csv/
-jago_reviews_raw.csv
-jago_preprocessing_id.csv
-jago_preprocessing_en.csv
-jupyter/
-1-data_scrapping.ipynb
-2-Preprocessing.ipynb
-3-EDA.ipynb
-3-EDA_EN.ipynb
-4-Sentiment_Analysis.ipynb
-4-Sentiment_Analysis_EN.ipynb
-README.md
+- Tugas_1/
+- csv/
+- jago_reviews_raw.csv
+- jago_preprocessing_id.csv
+- jago_preprocessing_en.csv
+- jupyter/
+- 1-data_scrapping.ipynb
+- 2-Preprocessing.ipynb
+- 3-EDA.ipynb
+- 3-EDA_EN.ipynb
+- 4-Sentiment_Analysis.ipynb
+- 4-Sentiment_Analysis_EN.ipynb
