@@ -71,7 +71,7 @@ The full project produces 6 sequential notebooks, two preprocessed CSVs, and exp
 
 ## What the Analysis Reveals for Bank Jago
 
-In the Indonesian dataset, about 62.05% of reviews are classified as positive and 37.95% as negative. This means most users report good experiences, but the share of complaints is still large enough that the model must learn the negative class well instead of just defaulting to “positive” predictions.
+Across both datasets, positive reviews are the majority. In the Indonesian dataset, 67.35% of reviews are positive and 32.65% are negative. The English dataset sits at 62.05% positive and 37.95% negative, meaning English-writing users complain at a slightly higher rate. Both datasets have enough negative samples to train a classifier that actually learns the negative class rather than just predicting positive by default.
 
 Negative reviews are not vague. They cluster around three recurring problems: login failures after app updates, transaction failures during QRIS payments, and slow or unhelpful customer service response. These show up consistently in both the Indonesian and English datasets, which means they are not isolated incidents.
 
